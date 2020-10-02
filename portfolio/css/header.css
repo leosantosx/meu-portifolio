@@ -1,0 +1,28 @@
+.header{
+    /* background-color: #6b77ad; */
+    color: #fff;
+    padding: 2.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header .name{
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.social-media li{
+    margin-top: 20px;
+    margin-left: 20px;
+    text-transform: uppercase;
+    transition: .5s transform;
+}
+
+.social-media li:hover{
+    transform: scale(1.2);
+}
+.social-media .action{
+    color: inherit;
+    text-decoration: none;
+}
