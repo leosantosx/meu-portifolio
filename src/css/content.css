@@ -1,16 +1,42 @@
 .content{
+    width: 80vw;
+    margin: 0 auto;
     display: flex;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .content img{
+    margin: 1rem;
     border-radius: 50%;
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     object-fit: cover;
     transition: 1s transform;
+    border: 10px solid var(--color-primary);
+}
+
+.content .user{
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--color-primary);
+    text-align: center;
 }
 
 .content img:hover{
-    transform: scale(1.5);
+    transform: scale(1.2);
+}
+
+.content h2{
+    margin: 50px 0 20px 0;
+    font-weight: bold;
+    font-size: 1.4rem;
+    color: var(--color-secondary);
+}
+
+.content p{
+    text-align: justify;
+    color: var(--color-secondary);
+    line-height: 2rem;
+    font-size: 1.2rem;
 }

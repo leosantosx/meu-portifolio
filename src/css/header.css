@@ -1,18 +1,15 @@
 .header{
-    /* background-color: #6b77ad; */
-    color: #fff;
-    padding: 2.5rem;
+    color: var(--color-primary);
+    padding: 2rem;
     font-size: 1.5rem;
     display: flex;
     flex-direction: column;
     text-align: center;
+    overflow: hidden;
 }
 
-.header .name{
-    font-weight: bold;
-    margin-bottom: 20px;
-}
 .social-media li{
+    font-weight: bold;
     margin-top: 20px;
     margin-left: 20px;
     text-transform: uppercase;
@@ -20,7 +17,7 @@
 }
 
 .social-media li:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .social-media .action{
     color: inherit;
