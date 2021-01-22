@@ -1,44 +1,106 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portifólio - Leo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/header.css">
-    <link rel="stylesheet" href="./css/content.css">
-    <link rel="stylesheet" href="./css/footer.css">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
+    <title>Leo Santos</title>
+  </head>
+  <body>
+    <main>
+      <section class="glass">
+        <div class="dashboard">
+          <div class="user">
+            <img src="img/profile.jpg" alt="avatar" />
+            <h3>Leo Santos</h3>
+            <!-- <p>Cool Front-Dev</p> -->
+          </div>
 
-</head>
-<body>
-
-    <header class="header">
-        <nav>
-            <ul class="social-media">
-                <li><a href="/" class="action">Início</a></li>
-                <li><a href="https://www.linkedin.com/in/leonardosant02/" target="_blank" class="action">Linkedin</a></li>
-                <li><a href="https://github.com/leosantosx" target="_blank" class="action">Github</a></li>
+          <div class="links">
+            <ul>
+              <li class="link">
+                <a
+                  href="https://www.linkedin.com/in/leonardosant02"
+                  target="_blank"
+                  ><i class="fa fa-linkedin-square" aria-hidden="true"></i
+                ></a>
+                <a href="https://www.linkedin.com/in/leonardosant02" target="_blank" class="social-text">Linkedin</a>
+              </li>
+              <li class="link">
+                <a href="https://github.com/leosantosx" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+                <a href="https://github.com/leosantosx" target="_blank" class="social-text">Github</a>
+              </li>
+              <li class="link">
+                <a href="https://twitter.com/Leo_sant01" target="_blank"
+                  ><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                  <a href="https://twitter.com/Leo_sant01" target="_blank" class="social-text">Twitter</a>
+              </li>
+              <li class="link">
+                <a href="mailto:leonardosaint748@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="mailto:leonardosaint748@gmail.com" target="_blank" class="social-text">E-mail</a>
+              </li>
             </ul>
-        </nav>
-    </header>
+          </div>
 
-    <main class="content">
-        <figure>
-            <img src="./img/profile.jpg" alt="Foto de Leo santos">
-            <figcaption class="user">Leo santos</figcaption>
-        </figure>
-        <h2>Quem sou eu?</h2>
-        <p>Sou estudante de programação com foco em front-end e back-end.
-            Gosto bastante das linguagens Python, PHP, e claro JavaScript.
-            🧐 Sou curioso sobre quase tudo e acredito que a tecnologia pode melhorar a vida e até ajudar as pessoas a alcançarem seus sonhos.
-        </p>
+          <div class="pro">
+            <h2>Hello World!</h2>
+            <a href="#"><i class="fa fa-code" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <div class="codes">
+          <div class="status">
+            <h1>Front-end XP</h1>
+          </div>
+
+          <ul class="cards">
+            <li class="card">
+              <img src="img/css.svg" alt="css" />
+              <div class="card-info">
+                <h2>CSS Development</h2>
+                <p>projects</p>
+                <div class="progress css"></div>
+              </div>
+              <h2 class="percentage">76%</h2>
+            </li>
+
+            <li class="card">
+              <img src="img/html-5.svg" alt="css" />
+              <div class="card-info">
+                <h2>HTML Development</h2>
+                <p>projects</p>
+                <div class="progress html"></div>
+              </div>
+              <h2 class="percentage">90%</h2>
+            </li>
+
+            <li class="card">
+              <img src="img/javascript.svg" alt="css" />
+              <div class="card-info">
+                <h2>Javascript Dev</h2>
+                <p>projects</p>
+                <div class="progress js"></div>
+              </div>
+              <h2 class="percentage">70%</h2>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
 
-    <footer>
-        <p>&copy; Copyright 2020 leosantos.tech</p>
-    </footer>
-    
-</body>
+    <script src="js/vanilla-tilt.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelector(".glass"), {
+        max: 10,
+        speed: 500,
+      });
+    </script>
+  </body>
 </html>
